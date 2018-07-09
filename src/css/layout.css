@@ -1,0 +1,16 @@
+.col-lg-6, col-md-6, col-sm-6, col-xs-6 {
+  padding-left: 0; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.firstSection, .secondSection {
+  margin-bottom: 50px; }
+
+.firstSection {
+  margin-top: 50px; }
+
+footer {
+  background: #484349;
+  color: white; }

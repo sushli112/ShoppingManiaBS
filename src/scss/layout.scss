@@ -1,0 +1,32 @@
+$carousel :100%;
+
+  .col-lg-6,col-md-6,col-sm-6,col-xs-6{
+    padding-left: 0;
+}
+.carousel-inner 
+{
+  img {
+  width: $carousel;
+  height: $carousel;
+  }
+}
+
+%margin-shared{
+  margin-bottom: 50px;
+}
+
+@mixin firstSecMargin($marginVal) {
+  margin-top: $marginVal;
+  @extend %margin-shared;
+}
+
+.firstSection{
+  @include firstSecMargin(50px);
+}
+.secondSection{
+ @extend %margin-shared;
+}
+footer{
+  background: #484349;
+  color: white;
+}
