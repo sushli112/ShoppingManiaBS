@@ -5,8 +5,12 @@ var browserSync= require('browser-sync');
 gulp.task('sass', function(){
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'])
       .pipe(sass()) // Using gulp-sass
-      .pipe(gulp.dest('src/css'))
-      .pipe(browserSync.stream);
+      .pipe(gulp.dest('src/css'));
+  });
+
+  gulp.task('js', function(){
+    return gulp.src(['node_modules/bootstrap/dist/js/*.*'])
+      .pipe(gulp.dest('src/js'));
   });
 
 
@@ -38,6 +42,6 @@ gulp.task('browser-sync', function() {
     });
  });
  
- gulp.task('default', ['sass', 'browser-sync'], function () {  
+ gulp.task('default', ['js','sass', 'browser-sync'], function () {  
     gulp.watch(["src/scss/*.scss", "src/*.html"],  ['sass']);
  });

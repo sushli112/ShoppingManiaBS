@@ -1,5 +1,10 @@
+$body-bg:#E9EDDE;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 body{
     width:100%;
+    background-color:  $body-bg;
 }
 header{
     position: fixed;
@@ -9,4 +14,10 @@ header{
 }
 .firstSection{
     position: relative;
+}
+a{
+    color:black;
+}
+a:hover{
+    color: #0080FF;
 }
