@@ -4,3 +4,9 @@
 .headerIcon {
   display: inline;
   font-size: 40px; }
+
+i {
+  color: blue; }
+
+i:hover {
+  color: white; }
